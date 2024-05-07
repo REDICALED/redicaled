@@ -18,16 +18,19 @@ export const BcKim = () => {
             <p className=" mt-5 font-semibold text-2xl mb-2"> 교육 </p>
             <p> 42서울 공통과정 수료 (2022. 03 ~ 2024. 02) </p>
             <p className=" mt-5 mb-10">
-
-            <a href='mailto:redicaled@gmail.com'>
-            <span className=" mt- font-semibold text-2xl mb-2"> Email </span>
-                redicaled@gmail.com
-            </a>
-
-            <a target="_blank" href='https://github.com/redicaled'>
-            <span className=" ml-10 mt- font-semibold text-2xl mb-2"> Github </span>
-            redicaled
-            </a>
+                
+            <div className="flex  ">
+                <a target="_blank" className=" pr-5 group font-semibold text-2xl" href='mailto:redicaled@gmail.com'>
+                    Email
+                    <span className="text-base font-normal"> redicaled@gmail.com </span>
+                    <div className="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                </a>
+                <a target="_blank" className=" pr-5 group font-semibold text-2xl" href='https://github.com/redicaled'>
+                    Github
+                    <span className=" text-base font-normal"> redicaled </span>
+                    <div className="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                </a>
+            </div>
 
             </p>
 
