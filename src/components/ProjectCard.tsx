@@ -12,8 +12,8 @@ export const ProjectCard = ({ title, date, img, description, stack,lastline }: {
             <h1 className=" text-2xl font-semibold "> {title} </h1>
             <h1 className=" text-md pb-1 font-semibold "> {date} </h1>
             <div className=" lg:flex "> 
-                <img src={img} className=" my-5 lg:my-1 pr-2 max-h-[40vh] object-contain" />
-                <div>
+                <img src={img} className=" flex-1 my-5 lg:my-1 pr-2 max-h-[40vh] object-contain" />
+                <div className="flex-1 ">
                     {description}
                     {stack.map((item, ) => (
                     <>
