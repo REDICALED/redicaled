@@ -7,43 +7,39 @@ import text from "@/assets/1111.png";
 import { useState } from "react";
 
 
-export const Projects = () => {
+export const Projects = (props: any) => {
     const [description, ShowDescription] = useState(false);
     const [project, setProject] = useState("hnhyn");
 
     return (
-        <div
-        >
-        <h1 id="projects" className=" my-5 text-center text-4xl">Projects</h1>
-        <hr className=" h-0.5 mx-[10vw] bg-black" />
-        <div className="mx-[10vw] transform-none  ">
-            <ProjectCard 
-            title="Artist Websites" 
-            date="2024. 02 ~ " 
-            img={ project === "hnhyn" ? hnhyn : duldol}
-            description={
-            <p> 
-                <p className="text-xl font-semibold">작가 웹사이트 개발 외주 </p>
-                <div className="flex">
-                <a target="_blank" className=" pr-5 group font-semibold text-2xl" href='https://www.hnhyn.kr'>
-                    <span onMouseEnter={()=>setProject("hnhyn")} className="text-base font-normal group-hover:font-bold "> www.hnhyn.kr  </span>
-                    <div className="bg-black h-[1px] w-0 group-hover:w-full transition-all duration-500"></div>
-                </a>
-                <a target="_blank" className=" pr-5 group font-semibold text-2xl" href='https://www.duldoljimi.com'>
-                    <span onMouseEnter={()=>setProject("duldol")} className="text-base font-normal group-hover:font-bold "> www.duldoljimi.com  </span>
-                    <div className="bg-black h-[1px] w-0 group-hover:w-full transition-all duration-500"></div>
-                </a>
-                </div>
+        <div id="projects" className="transform-none text-center grid grid-rows-4 h-[200vh] gap-0">
+        <ProjectCard 
+        title="Artist Websites" 
+        date="2024. 02 ~ " 
+        img={ project === "hnhyn" ? hnhyn : duldol}
+        description={
+        <p> 
+            <p className="text-xl font-semibold">작가 웹사이트 개발 외주 </p>
+            <div className="flex">
+            <a target="_blank" className=" pr-5 group font-semibold text-2xl" href='https://www.hnhyn.kr'>
+                <span onMouseEnter={()=>setProject("hnhyn")} className="text-base font-normal group-hover:font-bold "> www.hnhyn.kr  </span>
+                <div className="bg-black h-[1px] w-0 group-hover:w-full transition-all duration-500"></div>
+            </a>
+            <a target="_blank" className=" pr-5 group font-semibold text-2xl" href='https://www.duldoljimi.com'>
+                <span onMouseEnter={()=>setProject("duldol")} className="text-base font-normal group-hover:font-bold "> www.duldoljimi.com  </span>
+                <div className="bg-black h-[1px] w-0 group-hover:w-full transition-all duration-500"></div>
+            </a>
+            </div>
 
-                React를 이용한 프론트 구현, Git - Vercel을 이용한 <span className=" font-semibold">배포 자동화 구현</span><br />
-                REST API를 이용한 관리자, 에디터 기능 구현과 배포 자동화를 통한 <span className=" font-semibold"> 비용 최적화</span><br />
-                <span className=" font-semibold">작가와의 협업</span>을 통한 개개인 맞춤형 UX/UI 디자인 구현<br />
-                <span className=" font-semibold">1인 개발</span>로 사이트 기획, 디자인, 코드 개발, 퍼블리싱 경험 <br />
-            </p>
-            }
-            stack={["React", "Vercel", "Octokit", "TailwindCSS", "TypeScript", "FramerMotion"]}
-            lastline={true}
-            />
+            React를 이용한 프론트 구현, Git - Vercel을 이용한 <span className=" font-semibold">배포 자동화 구현</span><br />
+            REST API를 이용한 관리자, 에디터 기능 구현과 배포 자동화를 통한 <span className=" font-semibold"> 비용 최적화</span><br />
+            <span className=" font-semibold">작가와의 협업</span>을 통한 개개인 맞춤형 UX/UI 디자인 구현<br />
+            <span className=" font-semibold">1인 개발</span>로 사이트 기획, 디자인, 코드 개발, 퍼블리싱 경험 <br />
+        </p>
+        }
+        stack={["React", "Vercel", "Octokit", "TailwindCSS", "TypeScript", "FramerMotion"]}
+        num={props.num}
+        />
         <ProjectCard 
             title="42 Projects" 
             date="2022. 03 ~ 2024. 02" 
@@ -58,7 +54,7 @@ export const Projects = () => {
             </p>
             }
             stack={["Linux", "C", "C++", "Docker", "Nest.Js", "React", "Makefile"]}
-            lastline={true}
+            num={props.num}
             />
 
         <ProjectCard 
@@ -74,9 +70,10 @@ export const Projects = () => {
             </p>
             }
             stack={["React", "Postgresql", "Docker", "Nest.Js", "TypeScript"]}
-            lastline={true}
+            num={props.num}
             />
-            <ProjectCard 
+
+        <ProjectCard 
             title="TEXT SITE, 2022" 
             date="2022. 11 ~ 2022. 12" 
             img={text}
@@ -98,9 +95,8 @@ export const Projects = () => {
                 
             }
             stack={["Linux", "C", "Web Art"]}
-            lastline={false}
+            num={props.num}
             />
             </div>
-        </div>
     )
 }

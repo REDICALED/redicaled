@@ -1,7 +1,14 @@
 import { motion } from "framer-motion"
-import Bckim from "@/assets/Bckim.jpg";
 
-export const About = () => {
+export const About = (props: any) => {
+    const themes = [
+        { bg: "#ede8e4", text: "#000000" },
+        { bg: "#040f49", text: "#E06E12" },
+        { bg: "#272727", text: "#D3FF25" },
+        { bg: "#226246", text: "#FDBCD2" },
+        { bg: "#4F4D27", text: "#E8FF26" },
+    ];
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -9,24 +16,17 @@ export const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }} 
         >
-        <h1 id="about" className=" my-5 text-center text-4xl">About</h1>
-        <hr className=" h-0.5 mx-[10vw] bg-black" />
-        <div className="mx-[10vw] transform-none  ">
-            <div className="py-3">
-                <div className="flex">
-                    <img src={Bckim} className=" h-[30vh] object-cover" />
-                </div>  
-                <div className=" my-3">
-                <h1 className=" text-2xl font-semibold">김병찬 Kim ByeongChan</h1>
-                    <p className=" mb-2 text-md"> 1999.01.06</p>
-                    <p className="text-base ">평생 재밌게 개발하며 살고 싶습니다.</p>
-                    <p className=" text-base ">새롭고 재밌는 일이면 뭐든 해보고 싶습니다.</p>
-                    <p className="text-base">오버헤드와 트레이드오프가 가장 중요하다고 생각합니다.</p>
-                </div>
-                <div className=" my-3">
-                </div>
+        <div style={{ borderColor: themes[props.num]?.text}} id="about" className=" text-center grid grid-rows-2 gap-4 h-[33vh]">
+            <div style={{ borderColor: themes[props.num]?.text}}  className="  grid place-items-center lg:text-9xl sm:text-5xl text-3xl row-span-1 h-full border-t-2">
+                REDICALED
+            </div>
+            <div className="  grid place-items-center lg:text-9xl sm:text-5xl text-3xl row-span-1 h-full border-b-2">
+                BCKIM
             </div>
         </div>
+        {/* <div className="h-[62vh] lg:text-7xl sm:text-3xl mx-[1vw] ">
+            
+        </div> */}
         </motion.div>
     )
 }

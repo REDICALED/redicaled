@@ -1,7 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+  font-family: 'Montserrat';
+  src : local('Montserrat'),
+  url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src : local('Montserrat'),
+    url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+    font-style: italic, oblique;
+    }
+
+  @font-face {
+    font-family: 'Noto_Sans_KR';
+    src : local('Noto_Sans_KR'),
+    url('./fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf');
+    unicode-range: U+AC00-D7A3;
+    }
 body {
-  font-family: "Fira Sans";
+  font-family: "Montserrat", "Noto_Sans_KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
 }
 
 @tailwind base;
