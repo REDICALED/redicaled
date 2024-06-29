@@ -72,7 +72,7 @@ export const About = (props: any) => {
                     REDICALED
                 </div>
                 
-                <button className={`group lg:w-[10vh] w-[10vh] ease-in-out lg:mx-10 mx-5 `}>
+                <button onClick={() => window.open('https://www.github.com/redicaled')} className={`group lg:w-[10vh] w-[10vh] ease-in-out lg:mx-10 mx-5 `}>
                     <div className="w-[10vh] mt-[0.15vh] transition-color duration-500 ">
                         <GitSVG className={` transition-colors duration-500 pointer-events-auto ${fillsvg}`}  />
                     </div>
@@ -83,9 +83,11 @@ export const About = (props: any) => {
                 </div>
 
                 <button className={`group lg:w-[10vh] w-[10vh] ease-in-out lg:mx-10 mx-5 `}>
+                    <a target="_blank" href='mailto:redicaled@gmail.com'>
                     <div className="w-[10vh] mt-[0.15vh] transition-color duration-500 ">
                         <MailSVG className={` transition-colors duration-500 pointer-events-auto ${fillsvg}`}  />
                     </div>
+                    </a>
                 </button>
 
                 

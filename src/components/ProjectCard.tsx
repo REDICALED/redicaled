@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import MotionCard from "@/components/hr/MotionCard.tsx";
 import { useEffect, useState } from "react";
+import { ReactComponent as ArrowSVG} from "@/assets/arrow.svg";
+
 export const ProjectCard = ({ title, date, img, description, stack, num }: { title: string, date: string, img:string, description: JSX.Element, stack: Array<string>, num: number}) => {
     
     const [, SetColorstyle] =  useState("hover:text-t0-bg from-t0-text to-t0-text");
@@ -91,9 +93,7 @@ export const ProjectCard = ({ title, date, img, description, stack, num }: { tit
 
                 <div className=" grid place-items-center">
                 <button onClick={()=>{ SetDesCard(!descard)}} className= {`${buttonstyle} ${fillsvg} hover:transition-colors hover:duration-200 group border-2 mx-auto lg:mt-10 lg:w-[20vw] w-[25vw] md:mt-1 sm:mt-10 flex justify-end`}>
-                    <svg className={`  ${fillsvg} hover:transition-colors hover:duration-200 transition-colors duration-200 lg:w-20 w-10 mr-2 `} version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256">
-                        <g><g><g><path d="M240.9,61.6c-2.5,1-2.4-1-2.6,44.2c-0.2,40.2-0.3,42.2-1.1,43.5c-1.4,2.3-3.2,4.1-5.3,5.2l-1.9,1l-103.2,0.1c-56.8,0-103.3,0-103.3-0.2c0-0.2,5.7-6.1,12.7-13.1c11.4-11.4,12.7-12.9,12.7-14.3c0-1.1-0.4-1.9-1.3-2.7c-2.7-2.3-2.5-2.5-20.7,15.7C11.1,156.8,10,158,10,159.6c0,1.6,1,2.7,16.7,18.4c15.5,15.5,16.8,16.7,18.3,16.7c3,0,4.6-2.4,3.4-5.1c-0.4-0.9-6.2-7-12.9-13.7l-12.2-12.2l103.7-0.2l103.8-0.2l2.6-1c5.5-2.2,10-7,11.7-12.5c0.8-2.4,0.8-6.1,0.8-44.4c0-40.4,0-41.8-0.9-42.6C244,61.5,242.2,61.1,240.9,61.6z"/></g></g></g>
-                    </svg>
+                    <ArrowSVG className={`  ${fillsvg} hover:transition-colors hover:duration-200 transition-colors duration-200 lg:w-20 w-10 mr-2 `}/>
                 </button>
                 </div>
                 }
