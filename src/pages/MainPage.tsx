@@ -22,7 +22,7 @@ const MainPage = () => {
         <About num={themenum} />
         <Projects num={themenum} />
 
-        <Archive />
+        <Archive num={themenum} />
 
         <BcKim />
 

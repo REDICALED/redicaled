@@ -19,14 +19,14 @@ export const Projects = (props: any) => {
         img={ project === "hnhyn" ? hnhyn : duldol}
         description={
         <span className=" grid place-items-center "> 
-            <p className=" lg:text-xl text-sm font-semibold">작가 웹사이트 개발 외주 </p>
+            <p className=" text-xl lg:text-2xl font-semibold">작가 웹사이트 개발 외주 </p>
             <div className="flex">
             <a target="_blank" className=" pr-5 group font-semibold text-md lg:text-2xl" href='https://www.hnhyn.kr'>
-                <span onMouseEnter={()=>setProject("hnhyn")} className="text-base font-normal group-hover:font-bold "> www.hnhyn.kr  </span>
+                <span onMouseEnter={()=>setProject("hnhyn")} className=" underline italic text-base font-semibold group-hover:font-bold "> www.hnhyn.kr  </span>
                 <div className="bg-black h-[1px] w-0 group-hover:w-full transition-all duration-500"></div>
             </a>
             <a target="_blank" className=" pr-5 group font-semibold text-md lg:text-2xl" href='https://www.duldoljimi.com'>
-                <span onMouseEnter={()=>setProject("duldol")} className="text-base font-normal group-hover:font-bold "> www.duldoljimi.com  </span>
+                <span onMouseEnter={()=>setProject("duldol")} className=" underline italic text-base font-semibold group-hover:font-bold "> www.duldoljimi.com  </span>
                 <div className="bg-black h-[1px] w-0 group-hover:w-full transition-all duration-500"></div>
             </a>
             </div>
@@ -48,7 +48,7 @@ export const Projects = (props: any) => {
             img={fdf}
             description={
             <p> 
-                <span className="text-xl font-semibold"> 42서울 본 과정 교육 과제 </span><br />
+                <span className=" text-xl lg:text-2xl font-semibold"> 42서울 본 과정 교육 과제 </span><br />
                 Linux Shell, C, C++ 등 30여개의 과제를 통한 <span className=" font-semibold">핵심 CS 지식 학습</span><br />
                 Shell, Os, 가상환경, Raycasting, IRC(Internet Relay Chat) 등 <span className=" font-semibold">C/C++</span>로 구현<br />
                 저수준 환경에서의 소켓통신, 3D 시각화 등 독창적인 소프트웨어 개발 경험<br />
