@@ -15,7 +15,7 @@ const MainPage = () => {
         { bg: "#4F4D27", text: "#E8FF26" },
     ];
     return (
-        <div style={{ borderColor: themes[themenum]?.text, backgroundColor: themes[themenum]?.bg,  color: themes[themenum]?.text }} className=" transition-all duration-500">
+        <div style={{ borderColor: themes[themenum]?.text, backgroundColor: themes[themenum]?.bg,  color: themes[themenum]?.text }} className=" overflow-x-hidden  transition-all duration-500">
         <Nav num={themenum} SetThemenum={SetThemenum} />
 
         <div className=" pt-[5vh] ">
