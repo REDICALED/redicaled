@@ -50,7 +50,7 @@ export const Nav = (props:any) => {
 
             <div>         
                 <button onClick={()=>{props.SetThemenum((props.num+1)%5)}} className={` lg:h-[20px] h-[14px] group`}> 
-                    <div className={`${fillsvg} lg:w-[8.5vh] w-[4.5vh] mt-[0.15vh] ${buttonstyle} transition-color duration-500 `}>
+                    <div className={`${fillsvg} lg:w-[8.5vh] w-[5.2vh] mt-[0.15vh] ${buttonstyle} transition-color duration-500 `}>
                     <PirateSVG  />
                     </div>
                 </button>
