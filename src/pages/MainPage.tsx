@@ -18,7 +18,7 @@ const MainPage = () => {
         <div style={{ borderColor: themes[themenum]?.text, backgroundColor: themes[themenum]?.bg,  color: themes[themenum]?.text }} className=" overflow-x-hidden  transition-all duration-500">
         <Nav num={themenum} SetThemenum={SetThemenum} />
 
-        <div className=" pt-[5vh] ">
+        <div className=" pt-[8vh] ">
         <About num={themenum} />
         <Projects num={themenum} />
 

@@ -2,8 +2,10 @@ import { motion } from "framer-motion"
 import Marquee from "react-fast-marquee";
 import {ReactComponent as GitSVG} from "@/assets/GitHub.svg";
 import {ReactComponent as MailSVG} from "@/assets/mail.svg";
+import {ReactComponent as HouseSVG} from "@/assets/house.svg";
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export const About = (props: any) => {
     const themes = [
@@ -93,9 +95,20 @@ export const About = (props: any) => {
                 
             </Marquee>
         </div>
-        {/* <div className="h-[62vh] lg:text-7xl sm:text-3xl mx-[1vw] ">
-            
-        </div> */}
+        <div style={{ borderColor: themes[props.num]?.text}} className={` grid place-items-center group pointer-events-none ${buttonstyle} text-center h-[33vh] border-y-2`}>
+                <button className={`group lg:w-[10vh] w-[10vh] ease-in-out lg:mx-10 mx-5 `}>
+                <Link to="/dev">
+                    <div className="w-[10vh] mt-[0.15vh] transition-color duration-500 ">
+                        <HouseSVG className={` transition-colors duration-500 pointer-events-auto ${fillsvg}`}  />
+                    </div>
+                    </Link>
+                </button>
+                <div className=" lg:mx-10 mx-5 lg:text-9xl sm:text-5xl text-3xl row-span-1 h-full ">
+                    DevBlog
+                </div>
+        </div>
+    
+
         </motion.div>
     )
 }
