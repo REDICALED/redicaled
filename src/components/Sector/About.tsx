@@ -66,7 +66,7 @@ export const About = (props: any) => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }} 
         >
-        <div style={{ borderColor: themes[props.num]?.text}} id="about" className={` group pointer-events-none ${buttonstyle} text-center h-[33vh] border-b-[3px]`}>
+        <div style={{ borderColor: themes[props.num]?.text,  transitionDuration: '500ms' , transitionProperty: 'background-color, border-color'}}  id="about" className={` group pointer-events-none ${buttonstyle} text-center h-[33vh] border-b-[3px]`}>
             <Marquee pauseOnHover={true} speed={100} className=" h-full ">
                 <div className=" lg:mx-10 mx-5 lg:text-9xl sm:text-5xl text-3xl row-span-1 h-full ">
                     BCKIM
@@ -97,7 +97,7 @@ export const About = (props: any) => {
                 
             </Marquee>
         </div>
-        <div style={{ borderColor: themes[props.num]?.text}} className={` lg:py-0 py-10 lg:grid-cols-2 lg:grid lg:place-items-center group pointer-events-none ${buttonstyle} text-center lg:h-[33vh] border-b-[3px]`}>
+        <div style={{ borderColor: themes[props.num]?.text, transitionDuration: '500ms' , transitionProperty: 'background-color, border-color'}}  className={` lg:py-0 py-10 lg:grid-cols-2 lg:grid lg:place-items-center group pointer-events-none ${buttonstyle} text-center lg:h-[33vh] border-b-[3px]`}>
                 <div>
                 <button className={`group lg:w-[10vh] w-[10vh] ease-in-out lg:mx-10 mx-5`}>
                 <Link to="/dev">

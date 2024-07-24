@@ -42,15 +42,23 @@ export const Nav = (props:any) => {
     }, [props.num]);
 
     return (
-        <nav style={{ borderColor: themes[props.num]?.text, backgroundColor: themes[props.num]?.bg}} className=" border-b-2 font-extrabold fixed w-full grid grid-cols-5 text-center lg:h-[8vh] h-[8vh] lg:text-3xl text-xs sm:text-sm z-50 ">
+        <nav style={{ borderColor: themes[props.num]?.text, backgroundColor: themes[props.num]?.bg, transitionDuration: '500ms' , transitionProperty: 'background-color, border-color'}} className=" border-b-2 font-extrabold fixed w-full grid grid-cols-5 text-center lg:h-[8vh] h-[8vh] lg:text-3xl text-xs sm:text-sm z-50 ">
             <AnchorLink className=" group ease-in-out" href="#about">
-                <div className={` h-full py-[2.5vh] hover:pr-[10vw] hover:pl-[1vw] bg-left-bottom bg-gradient-to-r ${colorstyle} bg-[length:0%] bg-no-repeat group-hover:bg-[length:100%] transition-all duration-500 ease-out`}>
-                    About
+            <div
+  className={`transition-all duration-500 h-full py-[2.5vh] hover:pr-[10vw] hover:pl-[1vw] bg-left-bottom bg-gradient-to-r ${colorstyle} bg-[length:0%] bg-no-repeat group-hover:bg-[length:100%] ease-out`}
+  style={{
+    transitionProperty: 'background-size, padding-right, padding-left, background-position',
+  }}
+>                    About
                 </div>
             </AnchorLink>
             <AnchorLink className="group ease-in-out" href="#projects">
-            <div className={`h-full  py-[2.5vh] hover:pr-[10vw] hover:pl-[1vw] bg-left-bottom bg-gradient-to-r ${colorstyle} bg-[length:0%] bg-no-repeat group-hover:bg-[length:100%] transition-all duration-500 ease-out`}>
-            Projects
+            <div
+  className={`transition-all duration-500 h-full py-[2.5vh] hover:pr-[10vw] hover:pl-[1vw] bg-left-bottom bg-gradient-to-r ${colorstyle} bg-[length:0%] bg-no-repeat group-hover:bg-[length:100%] ease-out`}
+  style={{
+    transitionProperty: 'background-size, padding-right, padding-left, background-position',
+  }}
+>            Projects
                 </div>
             </AnchorLink>
 
@@ -63,14 +71,22 @@ export const Nav = (props:any) => {
             </div>
 
             <AnchorLink className="group ease-in-out" href="#archive">
-            <div className={`h-full  py-[2.5vh] hover:pr-[10vw] hover:pl-[1vw] bg-left-bottom bg-gradient-to-r ${colorstyle} bg-[length:0%] bg-no-repeat group-hover:bg-[length:100%] transition-all duration-500 ease-out`}>
-            Archive
+            <div
+  className={`transition-all duration-500 h-full py-[2.5vh] hover:pr-[10vw] hover:pl-[1vw] bg-left-bottom bg-gradient-to-r ${colorstyle} bg-[length:0%] bg-no-repeat group-hover:bg-[length:100%] ease-out`}
+  style={{
+    transitionProperty: 'background-size, padding-right, padding-left, background-position',
+  }}
+>            Archive
                 </div>
             </AnchorLink>
 
             <AnchorLink className="group ease-in-out" href="#BcKim">
-            <div className={`h-full  py-[2.5vh] hover:pr-[10vw] hover:pl-[1vw] bg-left-bottom bg-gradient-to-r ${colorstyle} bg-[length:0%] bg-no-repeat group-hover:bg-[length:100%] transition-all duration-500 ease-out`}>
-            BcKim
+            <div
+  className={`transition-all duration-500 h-full py-[2.5vh] hover:pr-[10vw] hover:pl-[1vw] bg-left-bottom bg-gradient-to-r ${colorstyle} bg-[length:0%] bg-no-repeat group-hover:bg-[length:100%] ease-out`}
+  style={{
+    transitionProperty: 'background-size, padding-right, padding-left, background-position',
+  }}
+>            BcKim
                 </div>
             </AnchorLink>
     </nav>
