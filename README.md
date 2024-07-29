@@ -1,4 +1,4 @@
-# redicaled.com
+# https://www.redicaled.com
 
 <img src="./src/assets/readme/redi1.png" alt="Getting started" />
 
