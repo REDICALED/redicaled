@@ -100,7 +100,7 @@ export const About = (props: any) => {
         <div style={{ borderColor: themes[props.num]?.text, transitionDuration: '500ms' , transitionProperty: 'background-color, border-color'}}  className={` lg:py-0 py-10 lg:grid-cols-2 lg:grid lg:place-items-center group pointer-events-none ${buttonstyle} text-center lg:h-[33vh] border-b-[3px]`}>
                 <div>
                 <button className={`group lg:w-[10vh] w-[10vh] ease-in-out lg:mx-10 mx-5`}>
-                <Link to="/dev">
+                <Link to="https://dev-blog-brown-delta.vercel.app/">
                     <div className="w-[10vh] mt-[0.15vh] transition-color duration-500 ">
                         <HouseSVG className={` transition-colors duration-500 pointer-events-auto ${fillsvg}`}  />
                     </div>
