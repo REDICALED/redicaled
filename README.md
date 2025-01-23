@@ -1,4 +1,4 @@
 # BcKim
-![SVG](https://raw.githubusercontent.com/REDICALED/redicaled/5b493008fd3a44b72708169d6987747d8a3d02b6/ff.svg)
+![SVG](https://raw.githubusercontent.com/REDICALED/redicaled/685d17ddfa39cafc216934aecdef501b118a847e/main_svg.svg)
 
 
