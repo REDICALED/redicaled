@@ -1,9 +1,6 @@
 **ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍʏ ɢɪᴛʜᴜʙ**
 ===
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/REDICALED/redicaled/408a4499d3a145f267b9190622a907e334e3ee70/main_svg.svg" width="50%" />
-</p>
 
 <p align="left">
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white"/>
