@@ -32,12 +32,6 @@
 <br/>
 <br/>
 
-
-<li> <a target="_blank" href="https://tmp-aiacs-len2.vercel.app/">버드 스트라이크 탐지 대시보드 웹사이트 (인턴 업무)</a> </li>
-<img width="250px" src="https://github.com/user-attachments/assets/1ea8252d-65bb-4dbb-b314-4767232f036e"/>
-<br/>
-<br/>
-
 이외 42서울 프로젝트 다수 
 
 <br/>
