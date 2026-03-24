@@ -18,7 +18,7 @@
 
 ## Projects
 
-<li> <a target="_blank" href="https://www.aggingkobe.com/">작가 개인사이트 제작1</a> </li>
+<li> <a target="_blank" href="https://hnhyn-2.pages.dev/">작가 개인사이트 제작1</a> </li>
 <img width="250px"  alt="image" src="https://github.com/user-attachments/assets/a5555cb7-fea0-4562-a0db-5b097b75cb99" />
 <br/>
 <br/>
