@@ -17,12 +17,18 @@
 <br/>
 
 ## Projects
-<li> <a target="_blank" href="https://www.duldoljimi.com/">작가 개인사이트 제작1</a> </li>
+
+<li> <a target="_blank" href="https://www.aggingkobe.com/">작가 개인사이트 제작1</a> </li>
+<img width="250px"  alt="image" src="https://github.com/user-attachments/assets/a5555cb7-fea0-4562-a0db-5b097b75cb99" />
+<br/>
+<br/>
+
+<li> <a target="_blank" href="https://www.duldoljimi.com/">작가 개인사이트 제작2</a> </li>
 <img width="250px" src="https://github.com/user-attachments/assets/64774e7f-a29e-4fcb-ad2a-651139efe5cc"/>
 <br/>
 <br/>
 
-<li> <a target="_blank" href="https://www.hnhyn.kr/">작가 개인사이트 제작2</a> </li>
+<li> <a target="_blank" href="https://www.hnhyn.kr/">작가 개인사이트 제작3</a> </li>
 <img width="250px" src="https://github.com/user-attachments/assets/4c53d489-b8bc-47ff-afb8-53dcfb371126"/>
 <br/>
 <br/>
